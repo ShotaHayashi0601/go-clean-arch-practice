@@ -1,5 +1,6 @@
 package domain
 
+// Author representing the Author data struct
 type Author struct {
 	ID        int64  `json:"id"`
 	Name      string `json:"name"`
