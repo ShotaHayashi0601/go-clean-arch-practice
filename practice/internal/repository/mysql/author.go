@@ -3,6 +3,8 @@ package mysql
 import (
 	"context"
 	"database/sql"
+	"fmt"
+
 	"github.com/ShotaHayashi0601/go-clean-arch-practice/practice/domain"
 )
 
@@ -35,4 +37,49 @@ func (m *AuthorRepository) getOne(ctx context.Context, query string, args ...int
 func (m *AuthorRepository) GetByID(ctx context.Context, id int64) (domain.Author, error) {
 	query := `SELECT id, name, created_at, updated_at FROM author WHERE id=?`
 	return m.getOne(ctx, query, id)
+}
+
+func (m *ArticleRepository) Store(ctx context.Context, a *domain.Article) (err error) {
+	query := `INSERT  article SET title=? , content=? , author_id=?, updated_at=? , created_at=?`
+	stmt, err := m.Conn.PrepareContext(ctx, query)
+	if err != nil {
+		return
+	}
+
+	res, err := stmt.ExecContext(ctx, a.Title, a.Content, a.Author.ID, a.UpdatedAt, a.CreatedAt)
+	if err != nil {
+		return
+	}
+	lastID, err := res.LastInsertId()
+	if err != nil {
+		return
+	}
+	a.ID = lastID
+	return
+}
+
+func (m *ArticleRepository) Delete(ctx context.Context, id int64) (err error) {
+	query := "DELETE FROM article WHERE id = ?"
+
+	stmt, err := m.Conn.PrepareContext(ctx, query)
+	if err != nil {
+		return
+	}
+
+	res, err := stmt.ExecContext(ctx, id)
+	if err != nil {
+		return
+	}
+
+	rowsAfected, err := res.RowsAffected()
+	if err != nil {
+		return
+	}
+
+	if rowsAfected != 1 {
+		err = fmt.Errorf("weird  Behavior. Total Affected: %d", rowsAfected)
+		return
+	}
+
+	return
 }
