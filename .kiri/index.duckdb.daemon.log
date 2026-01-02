@@ -1,0 +1,45 @@
+2026-01-01T12:36:00.444Z Starting daemon for database: C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb
+[Daemon] PID: 21812
+⚠️  Database not found. Running indexer for C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch...
+❌ Indexing failed: Command failed: git rev-parse HEAD
+fatal: not a git repository (or any of the parent directories): .git
+
+ℹ️  Cleaning up partially created database...
+❌ Failed to delete C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb: EBUSY: resource busy or locked, unlink 'C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb'
+💡 Tip: Use --allow-degrade to start server despite indexing failure
+2026-01-01T12:36:10.750Z Fatal error: Command failed: git rev-parse HEAD
+fatal: not a git repository (or any of the parent directories): .git
+
+[Daemon] Fatal error: Command failed: git rev-parse HEAD
+fatal: not a git repository (or any of the parent directories): .git
+
+2026-01-01T12:37:53.694Z Starting daemon for database: C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb
+[Daemon] PID: 12028
+2026-01-01T12:37:56.040Z Failed to create runtime: IO Error: Cannot open file "C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb": プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+
+File is already open in 
+C:\Users\Syota_Hayashi\AppData\Local\nvm\v22.17.1\node.exe (PID 12028)
+[Daemon] Failed to create runtime: IO Error: Cannot open file "C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb": プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+
+File is already open in 
+C:\Users\Syota_Hayashi\AppData\Local\nvm\v22.17.1\node.exe (PID 12028)
+2026-01-01T12:38:36.110Z Starting daemon for database: C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb
+[Daemon] PID: 32704
+2026-01-01T12:38:36.897Z Failed to create runtime: IO Error: Cannot open file "C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb": プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+
+File is already open in 
+C:\Users\Syota_Hayashi\AppData\Local\nvm\v22.17.1\node.exe (PID 32704)
+[Daemon] Failed to create runtime: IO Error: Cannot open file "C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb": プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+
+File is already open in 
+C:\Users\Syota_Hayashi\AppData\Local\nvm\v22.17.1\node.exe (PID 32704)
+2026-01-02T06:09:29.163Z Starting daemon for database: C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb
+[Daemon] PID: 25104
+2026-01-02T06:09:29.440Z Failed to create runtime: IO Error: Cannot open file "C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb": プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+
+File is already open in 
+C:\Users\Syota_Hayashi\AppData\Local\nvm\v22.17.1\node.exe (PID 25104)
+[Daemon] Failed to create runtime: IO Error: Cannot open file "C:\Users\Syota_Hayashi\Desktop\desktop\dev\goProject\go-clean-arch\.kiri\index.duckdb": プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+
+File is already open in 
+C:\Users\Syota_Hayashi\AppData\Local\nvm\v22.17.1\node.exe (PID 25104)
